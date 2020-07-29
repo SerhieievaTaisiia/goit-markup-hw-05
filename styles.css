@@ -49,11 +49,7 @@ a {
   display: block;
   text-decoration: none;
 }
-/*.link-list-item {
-  width: 170px;
-  height: 90px;
-  border: 2px solid #AFB1B8;
-}*/
+
 .conteiner {
   margin-left: auto;
   margin-right: auto;
@@ -62,9 +58,7 @@ a {
   width: 1200px;
   /*outline: 2px solid tomato;*/
 }
-/*.conteiner contacts {
-  display: flex;
-}*/
+
 /*шапка*/
 .site-nav a {
   color: var(--primary-text-color);
@@ -201,18 +195,6 @@ a {
   padding-top: 93px;
   padding-bottom: 94px;
 }
-
-.section-title {
-  color: var(--primary-text-color);
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 .features-list,
 .team-list .title {
   color: var(--primary-text-color);
@@ -240,13 +222,7 @@ a {
   height: 70px;
 }
 
-/*работы*/
-.works-list {
-  display: flex;
-}
-.works-list-items:not(:last-child) {
-  margin-right: 30px;
-}
+/*команда*/
 .team-list {
   display: flex;
 }
@@ -288,15 +264,48 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
+/*чем мы занимаемся*/
+.section-title {
+  color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .works-item {
   text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+.works-list {
+  display: flex;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.works-list-items {
+  position: relative;
+}
+.works-list-items:not(:last-child) {
+  margin-right: 30px;
 }
 .works-titel-item {
   color: var(--title-text-color);
@@ -310,6 +319,7 @@ a {
   letter-spacing: 0.03em;
 }
 .works-list-item {
+  position: relative;
   width: 370px;
   /*width: calc((100%-60px)/3);*/
   margin-right: 30px;
@@ -332,6 +342,32 @@ a {
   justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
+}
+.overlay-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 63px;
+  width: 370px;
+  height: 294px;
+  /*background-color: rgba(33, 150, 243, 0.9);*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overlay-text {
+  width: 322px;
+  height: 168px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.overlay-works:hover {
+  background-color: rgba(33, 150, 243, 0.9);
 }
 .button-list-item:not(:last-child) {
   margin-right: 8px;
