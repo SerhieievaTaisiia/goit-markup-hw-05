@@ -74,11 +74,13 @@ a {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation::after {
   content: "";
@@ -319,13 +321,16 @@ a {
   letter-spacing: 0.03em;
 }
 .works-list-item {
-  position: relative;
   width: 370px;
   /*width: calc((100%-60px)/3);*/
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.works-list-item .overlay-text:hover {
+  opacity: 1;
 }
 .works-list-item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -343,19 +348,30 @@ a {
   margin-top: 0;
   margin-bottom: 50px;
 }
+.works-list-item-img {
+  position: relative;
+}
 .overlay-works {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 63px;
-  width: 370px;
-  height: 294px;
+  /*margin-bottom: 63px;*/
+  width: 100%;
+  height: 100%;
   /*background-color: rgba(33, 150, 243, 0.9);*/
   position: absolute;
   top: 0;
   left: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-text {
+  position: absolute;
+  left: 50%;
+  bottom: 63px;
+  transform: translateX(-50%);
+  color: #ffffff;
+  opacity: 0;
+  margin: 0;
   width: 322px;
   height: 168px;
   font-family: Roboto;
@@ -364,11 +380,12 @@ a {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: #ffffff;
 }
-.overlay-works:hover {
+
+.works-list-item .overlay-works:hover {
   background-color: rgba(33, 150, 243, 0.9);
 }
+
 .button-list-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -421,6 +438,7 @@ a {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .instagram-icon {
   width: 20px;
@@ -474,6 +492,7 @@ a {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.03em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -527,6 +546,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
@@ -661,6 +681,7 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 75%;
   background-size: 20px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .instagram-footer {
   width: 20px;
